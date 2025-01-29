@@ -212,11 +212,5 @@ def CreateTargets(SizeOfTargets, MaxTarget):
         Targets.append(GetTarget(MaxTarget))
     return Targets
     
-def FillNumbers(NumbersAllowed, TrainingGame, MaxNumber):
-    if TrainingGame:
-        return [2, 3, 2, 8, 512]
-    else:
-        while len(NumbersAllowed) < 5:
-            NumbersAllowed.append(GetNumber(MaxNumber))      
-        return NumbersAllowed
+
 
